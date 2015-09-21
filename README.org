@@ -1,6 +1,9 @@
 * MilkToDo
 milkcocoaでTODOアプリをつくるチュートリアルをためす
 
+** Demo
+- [[http://ladicle.github.io/milktodo/][milktodo]]
+
 ** 参考
 - [[https://mlkcca.com/][milkcocoa]]
 - [[http://blog.mlkcca.com/frontend/todo-app-1/][リアルタイムなToDoアプリをMilkcocoaとJavaScriptで作る]]

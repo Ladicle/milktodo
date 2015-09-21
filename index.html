@@ -1,17 +1,51 @@
 <html>
   <head>
     <title>milktodo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <script src='https://cdn.mlkcca.com/v2.0.0/milkcocoa.js'></script>
     <script src="js/main.js"></script>
   </head>
   <body>
     <div id="wrapper">
-      <div id="add_area">
-	<input id="input_todo_box" type="text" />
-	<button id="add_todo_btn">add</button>
-      </div> <!-- /add_area -->
-      <div id="todo_list">
-      </div> <!-- /todos -->
-    </div> <!-- /wrapper -->
+      <header>
+	<h1>milktodo</h1>
+      </header>
+      <div class="jumbotron">
+	<h2> Todo management application!</h2>
+	<p>This application using <a href='https://mlkcca.com/'>milkcocoa</a>.<br />
+	  Please input your application id.</p>
+      </div> <!-- /.jumbotron -->
+
+      <div id="user-settings" class="content">
+	<h3><span class="glyphicon">🔧 </span> Settings</h3>
+	<div class="form-inline">
+	  <div class="input-group">
+	    <span class="input-group-addon">Your application ID</span>
+	    <input id="input-appid-box" type="text" class="form-control" placeholder="xxxx.mlkcca.com" />
+	  </div> <!-- /.input-group -->
+	  <button id="regist-appid-btn" type="submit" class="btn">regist</button>
+	</div> <!-- /.form-inline -->
+      </div> <!-- /#user-settings -->
+
+      <div id="add-area">
+	<h3><span class="glyphicon">📌 </span> Todo</h3>
+
+	<!-- ADD TODO BOX -->
+	<div class="form-inline">
+	  <div class="input-group">
+	    <span class="input-group-addon">TODO</span>
+	    <input id="input-todo-box" type="text" class="form-control" placeholder="Clean my room." />
+	  </div> <!-- /.input-group -->
+	  <button id="add-todo-btn" type="submit" class="btn">regist</button>
+	</div> <!-- /.form-inline -->
+      </div> <!-- /#add-area -->
+
+      <!-- TODO LIST -->
+      <div id="todo-area" class="content">
+	<ul id="todo-list">
+	</ul> <!-- /#todo-list -->
+      </div> <!-- /#todo-area -->
+    </div> <!-- /#wrapper -->
   </body>
 </html>

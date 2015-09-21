@@ -1,0 +1,53 @@
+/*!
+ * main.css
+ * author: ladicle
+ */
+
+body a{
+    color: rgb(70, 184, 218);
+    text-decoration: none;
+}
+
+#wrapper {
+    width: 640px;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header h1 {
+    text-indent: 5px;
+}
+
+.jumbotron {
+    border-radius: 6px;
+    padding: 30px;
+}
+
+#input-appid-box {
+    width: 430px;
+}
+
+#input-todo-box {
+    width: 510px;
+}
+
+#todo-list {
+    padding: 10px;
+    margin: 20px 10px;
+}
+
+#todo-list li:before {
+    content: "✔";
+    margin-right: 1em;
+}
+
+#todo-list li:hover::before {
+    color: green;
+}
+
+#todo-list li {
+    list-style-type: none;
+    cursor: pointer;
+    line-height: 2.2em;
+    border-bottom: solid 1px #eee;
+}
